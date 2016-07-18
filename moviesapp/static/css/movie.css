@@ -1,0 +1,50 @@
+body {
+    padding-left: 15px;
+    background-color: #1C0113;
+    font-family: Montserrat, sans-serif;
+}
+
+#title label{
+    font-size: 150px;
+    color: #6B0103;
+}
+#top-div a {
+    color: #F03C02;
+    font-weight: bold;
+}
+
+#movie_options {
+    font-size: 100px;
+}
+#movie_title{
+    color: #F03C02;
+    font-weight: bold;
+    padding-bottom: 20px;
+
+}
+
+#movie {
+    margin: 10px;
+    margin-bottom: 30px;
+    align-content: center;
+    color: #F0F0FF;
+    background-color: #6B0103;
+    padding-left: 50px;
+    border-style: dashed;
+    border-width: 3px;
+}
+
+#movies {
+    margin-top: 100px
+}
+#description {
+    font-size: 18px;
+}
+#grade {
+
+}
+#poster img {
+    height: 400px;
+    width: auto;
+
+}
