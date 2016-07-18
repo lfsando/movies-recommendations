@@ -1,8 +1,10 @@
+{%  load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Recomendações de Filmes - Cine Ice</title>
+        <title>Movie Recommendations - Cine Ice</title>
     </head>
     <body>
         <div>
@@ -10,9 +12,21 @@
                 <h1><a href=""> Cine Ice</a> </h1>
             </div>
             <div>
-                <a href=""><h2>Aleatório</h2></a>
-                <a href=""><h2>Humor</h2></a>
+                <a href=""><h2>Random</h2></a>
+                <a href=""><h2>Mood</h2></a>
             </div>
+        </div>
+        <div id="movie">
+            {% for movie in movies %}
+                <div>
+                    <div id="movie_title">
+                        <h1>{{ movie.title }} ({{ movie.release_date }})</h1>
+                        <p>{{ movie.poster }}</p>
+                    </div>
+                    <p><h2>{{ movie.grade }}</h2></p>
+                    <p>{{ movie.description|linebreaksbr }}</p>
+                </div>
+            {% endfor %}
         </div>
     </body>
 </html>
